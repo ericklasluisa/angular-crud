@@ -11,6 +11,7 @@ import { ProductDeleteComponent } from './product-delete/product-delete.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
     RouterLink,
     RouterLinkActive,
     RouterModule,
+    HeaderComponent,
     ProductListComponent,
     ProductAddComponent,
     ProductEditComponent,

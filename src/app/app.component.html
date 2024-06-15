@@ -1,6 +1,6 @@
-<h1>{{ title }}</h1>
-<nav>
-  <a class="button" routerLink="/product-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Product List</a> |
-  <a class="button" routerLink="/product-add" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Add Product</a>
-</nav>
-<router-outlet></router-outlet>
+<div class="d-flex flex-column justify-content-center">
+  <app-header></app-header>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
