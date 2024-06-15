@@ -12,15 +12,15 @@ import { Product } from '../product.interface';
   styleUrl: './product-add.component.css',
 })
 export class ProductAddComponent {
-  product: Product = { id: 0, name: '', price: 0 };
+  product: Product = { id: '', name: '', price: 0 };
 
   constructor(private productService: ProductService, private router: Router) {}
 
   addProduct(): void {
     this.productService.getProducts().subscribe((data: Product[]) => {
-      const ultimoId = data[data.length - 1]!.id;
+      const ultimoId = data[data.length - 1].id || '0';
       
-      this.product.id = +ultimoId + 1;
+      this.product.id = (+ultimoId + 1).toString();
 
       console.log(this.product);
       

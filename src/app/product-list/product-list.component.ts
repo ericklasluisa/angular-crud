@@ -14,11 +14,11 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './product-list.component.css',
 })
 export class ProductListComponent {
-  deleteProduct(id: number) {
+  deleteProduct(id: string) {
     this.router.navigate(['/product-delete', id])
   }
 
-  editProduct(id: number) {
+  editProduct(id: string) {
     this.router.navigate(['/product-edit', id])
   }
   products: Product[] = [];

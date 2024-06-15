@@ -23,7 +23,7 @@ export class ProductDeleteComponent {
   ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const id: string = this.route.snapshot.paramMap.get('id')!;
     this.productService.getProduct(id).subscribe((data: Product) => {
       this.product = data;
     });

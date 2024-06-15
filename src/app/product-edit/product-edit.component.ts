@@ -13,7 +13,7 @@ import { Product } from '../product.interface';
   styleUrl: './product-edit.component.css',
 })
 export class ProductEditComponent {
-  product: Product = { id: 0, name: '', price: 0 };
+  product: Product = { id: '', name: '', price: 0 };
 
   constructor(
     private productService: ProductService,
@@ -22,10 +22,12 @@ export class ProductEditComponent {
   ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const id: string = this.route.snapshot.paramMap.get('id')!;
     this.productService.getProduct(id).subscribe((data: Product) => {
       this.product = data;
     });
+    console.log(this.product);
+    
   }
 
   updateProduct(): void {
