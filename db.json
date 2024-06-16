@@ -2,8 +2,18 @@
   "products": [
     {
       "id": "1",
-      "name": "Product 1",
+      "name": "Celular",
       "price": 300
+    },
+    {
+      "id": "2",
+      "name": "Laptop",
+      "price": 300
+    },
+    {
+      "id": "3",
+      "name": "Playstation 5",
+      "price": 600
     }
   ]
 }
