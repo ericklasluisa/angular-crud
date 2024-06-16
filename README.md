@@ -1,27 +1,45 @@
-# AngularCrud
+<h1 align="center" id="title">Desarrollo de CRUD con Angular</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+- Erick Lasluisa
+- Francisco Quiroga
+- Augusto Salazar
 
-## Development server
+<p id="description">Desarrollo de aplicación web utilizando el framework Angular, en conjunto con Bootstrap 5</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h2>🧐 Características</h2>
 
-## Code scaffolding
+El aplicativo web permite las siguientes características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Ver todos los productos
+- Agregar Producto
+- Editar Producto
+- Eliminar Producto
 
-## Build
+<h2>🛠️ Pasos de instalación:</h2>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p>1. Clonar el repositorio</p>
 
-## Running unit tests
+```
+git clone https://github.com/ericklasluisa/angular-crud.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p>2. Instalar las dependencias</p>
 
-## Running end-to-end tests
+```
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p>3. Ejecutar la aplicación</p>
 
-## Further help
+```
+ng serve -o
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> Si el puerto 4200 está en ejecución, la aplicación se ejecutará desde otro puerto, este aparecerá en consola después de ejecutar el comando npm start
+
+<h2>💻 Desarrollado con</h2>
+
+Tecnologías utilizadas en el proyecto:
+
+- Angular 18
+- Bootstrap 5.3
